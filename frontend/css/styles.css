@@ -186,9 +186,11 @@ body {
     background-color: #d18e06;
 }
 
-/* ---------- Deuxième Page ------------ */
 
-.presentation{
+
+
+/* ---------- Deuxième Page ------------ */
+.presentation-spa{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -252,8 +254,8 @@ body {
 
 /* Box de droite avec l'image */
 .right-box{
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     background-color: rgb(44, 148, 148);
     position: relative;
     background-image: url('/frontend/assets/spa.jpg');
@@ -269,8 +271,8 @@ body {
 
 /* Le hover */
 .right-box:hover{
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     background-color: rgb(44, 148, 148);
     position: relative;
     background-image: url('/frontend/assets/spa.jpg');
@@ -281,4 +283,152 @@ body {
     border-radius: 0%;
     z-index: 1;
     display: flex;
+}
+
+
+
+/* ---------- Troisième Page Chambre ---------- */
+.presentation-chambres{
+    width: 100%;
+    height: 100vh;
+    /* background-color: beige; */
+    
+}
+
+.top-section3{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    /* background-color: blue; */
+    flex-direction: column;
+}
+
+.undertitle{
+    width: 30%;
+    height: 40%;
+    /* background-color: yellow; */
+    margin-bottom: 25px;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.global-section3{
+    width: 100%;
+    height: 80vh;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Image de gauche */
+.left-section3{
+    width: 40%;
+    height: 80%;
+    background-color: red;
+    position: relative;
+    background-image: url('/frontend/assets/chambre1.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:  64% 36% 38% 62% / 45% 49% 51% 55%;
+    /* border-radius: 5%; */
+    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
+    z-index: 1;
+    display: flex;
+}
+
+.left-section3:hover{
+    width: 40%;
+    height: 80%;
+    background-color: red;
+    position: relative;
+    background-image: url('/frontend/assets/chambre1.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    /* border-radius:  64% 36% 38% 62% / 45% 49% 51% 55%; */
+    z-index: 1;
+    display: flex;
+}
+
+/* Image de droite */
+.right-section3{
+    width: 40%;
+    height: 80%;
+    background-color: blue;
+    position: relative;
+    background-image: url('/frontend/assets/chambre3.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 42% 58% 38% 62% / 45% 49% 51% 55%;
+    z-index: 1;
+    display: flex;
+    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
+}
+
+.right-section3:hover{
+    width: 40%;
+    height: 80%;
+    background-color: red;
+    position: relative;
+    background-image: url('/frontend/assets/chambre3.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    z-index: 1;
+    display: flex;
+}
+
+.mid-section3{
+    width: 40%;
+    height: 25%;
+    background-color: rgb(255, 252, 252);
+    border: 0.1px solid #cac6c6;
+    position: absolute;
+    z-index: 1;
+    margin-top: 28%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-content3{
+    width: 80%;
+    height: 50%;
+    /* background-color: blue; */
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.btn-plus3{
+    width: 25%;
+    height: 20%;
+    border-radius: 1px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #100f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-content3{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
 }
