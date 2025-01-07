@@ -197,7 +197,6 @@ body {
 .left-page{
     width: 50%;
     height: 100vh;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,6 +238,7 @@ body {
 .content-bottom{
     /* background-color: #d18e06; */
     font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .right-page{
@@ -264,6 +264,7 @@ body {
     border-radius: 20%;
     z-index: 1;
     display: flex;
+    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
 }
 
 /* Le hover */
