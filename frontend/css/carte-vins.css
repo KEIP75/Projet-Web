@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Définir le poids par défaut */
     scroll-behavior: smooth;
 }
 
@@ -118,35 +121,36 @@ body {
 }
 
 
-/* Top Section */
-.top-section {
+
+/* ----------- Première Page Vins-------------*/
+.top-section-vins {
     width: 100%;
     height: 88vh;
     position: relative;
-    background-image: url('/frontend/assets/background1.jpg');
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('/frontend/assets/vins.jpg');
     background-color: #efa507;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: 1;
     display: flex;
 }
 
 /* Le filtre opacité */
-.top-section::before {
+.top-section-vins::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0.5, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     border-radius: 20px;
     z-index: 2;
 }
 
-.content {
+.content-vins {
     position: absolute;
     top: 40%; 
     left: 50%; 
@@ -157,7 +161,7 @@ body {
 }
 
 /* Style pour le titre */
-.content h1 {
+.content-vins h1 {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 1rem; 
@@ -165,13 +169,13 @@ body {
 }
 
 /* Style pour le sous-titre */
-.content p {
+.content-vins p {
     font-size: 1.5rem; 
     font-weight: 300;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
-.btn {
+.btn-vins {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -184,116 +188,165 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
+.btn-vins:hover {
     background-color: #d18e06;
 }
 
 
 
+/* ------- Presentation Vins ---------- */
 
-/* ---------- Deuxième Page ------------ */
-.presentation-spa{
+.global-vins{
     width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-.left-page{
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left-box{
-    width: 80%;
-    height: 70%;
+    height: 120vh;
+    background: rgb(23,32,63);
+    background: linear-gradient(174deg, rgba(0,0,0,1) 0%, rgba(35,40,75,1) 50%, rgba(23,32,63,1) 100%);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* background-color: green; */
 }
 
-.content-top{
-    color: #e1b908;
-    font-weight: 200; 
-    font-family: 'Raleway', sans-serif;
+.top-vins{
+    width: 100%;
+    height: 35vh;
     /* background-color: red; */
-    width: 100%;
-    height: 10%;
-    display: flex;
-    align-items: baseline;
-}
-
-.content-mid{
-    width: 100%;
-    height: 130px;
-    color: #1C1C1C;
-    font-size: 24px;
-    font-family: 'Roboto Slab', serif;
-    letter-spacing: 2px;
-    /* background-color: blue; */
-    margin: 0;
-    display: flex;
-    align-items: end;
-}
-
-.content-bottom{
-    /* background-color: #d18e06; */
-    font-size: small;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.right-page{
-    width: 50%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.first-p{
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-top: 3%;
+    /* background-color: #d18e06; */
+}
+
+.second-p{
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    /* background-color: aqua; */
+}
+
+.third-p{
+    width: 70%;
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    /* background-color: blue; */
+    text-align: center;
+}
+
+.fourth-p{
+    font-size: small;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    /* background-color: brown; */
+}
+
+.container-vins{
+    width: 100%;
+    height: 85vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.left-container{
+    width: 40%;
+    height: 75vh;
+    /* background-color: black; */
+}
+
+/* Les texts */
+.first-container-vins{
+    margin-top: 10%;
+    width: 100%;
+    height: 10vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Ombre */
+    /* background-color: red; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
 
 }
 
-/* Box de droite avec l'image */
-.right-box{
-    width: 75%;
-    height: 75%;
-    background-color: rgb(44, 148, 148);
-    position: relative;
-    background-image: url('/frontend/assets/spa.jpg');
+.second-container-vins{
+    width: 100%;
+    height: 15vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Ombre */
+    /* background-color: burlywood; */
+    font-size: small;
+    letter-spacing: 0.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.third-container-vins{
+    width: 100%;
+    height: 15vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Ombre */
+    /* background-color: burlywood; */
+    font-size: small;
+    letter-spacing: 0.5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.fourth-container-vins{
+    width: 100%;
+    height: 15vh;
+    /* background-color: burlywood; */
+    font-size: small;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Ombre */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+
+}
+
+/* Partie droite */
+.right-container{
+    width: 40%;
+    height: 60vh;
+    background-color: purple;
+    margin-left: 5%;
+    background-image: url('/frontend/assets/cave-vins.png');
+    border-radius: 50% 50% 46% 54% / 47% 25% 75% 53%;
     background-color: #efa507;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
-    border-radius: 20%;
-    z-index: 1;
-    display: flex;
-    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
 }
 
-/* Le hover */
-.right-box:hover{
-    width: 75%;
-    height: 75%;
-    background-color: rgb(44, 148, 148);
-    position: relative;
-    background-image: url('/frontend/assets/spa.jpg');
+.right-container:hover{
+    width: 40%;
+    height: 60vh;
+    background-color: purple;
+    margin-left: 5%;
+    background-image: url('/frontend/assets/cave-vins.png');
+    border-radius: 2%;
     background-color: #efa507;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 0%;
-    z-index: 1;
-    display: flex;
 }
 
+/* -------------- Deuxième Page ------------------ */
 
-/* ---------- Troisième Page Chambre ---------- */
-.presentation-chambres{
+.global-carte-vins{
     width: 100%;
     height: 100vh;
-    /* background-color: beige; */
+    background: rgb(23,32,63);
+    background: linear-gradient(174deg, rgba(23,32,63,1) 0%, rgba(35,40,75,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 .top-section3{
@@ -303,9 +356,11 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto Slab', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Ombre */
     font-size: 24px;
     /* background-color: blue; */
     flex-direction: column;
+    color: white;
 }
 
 .undertitle{
@@ -328,17 +383,18 @@ body {
 
 /* Image de gauche */
 .left-section3{
-    width: 40%;
-    height: 80%;
+    width: 60%;
+    height: 100%;
+    margin-top: 5%;
     background-color: red;
     position: relative;
-    background-image: url('/frontend/assets/chambre1.jpg');
+    background-image: url('/frontend/assets/carte-vins.jpg');
     background-color: #efa507;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     transition: all 0.5s ease-in-out;
-    border-radius:  64% 36% 38% 62% / 45% 49% 51% 55%;
+    border-radius:  64% 36% 38% 62% / 45% 49% 51% 55%; 
+   
     /* border-radius: 5%; */
     box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
     z-index: 1;
@@ -346,11 +402,11 @@ body {
 }
 
 .left-section3:hover{
-    width: 40%;
-    height: 80%;
+    width: 60%;
+    height: 100%;
     background-color: red;
     position: relative;
-    background-image: url('/frontend/assets/chambre1.jpg');
+    background-image: url('/frontend/assets/carte-vins.jpg');
     background-color: #efa507;
     background-size: cover;
     background-position: center;
@@ -358,89 +414,5 @@ body {
     border-radius: 5%;
     /* border-radius:  64% 36% 38% 62% / 45% 49% 51% 55%; */
     z-index: 1;
-    display: flex;
-}
-
-/* Image de droite */
-.right-section3{
-    width: 40%;
-    height: 80%;
-    background-color: blue;
-    position: relative;
-    background-image: url('/frontend/assets/chambre3.jpg');
-    background-color: #efa507;
-    background-size: cover;
-    transition: all 0.5s ease-in-out;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 42% 58% 38% 62% / 45% 49% 51% 55%;
-    z-index: 1;
-    display: flex;
-    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
-}
-
-.right-section3:hover{
-    width: 40%;
-    height: 80%;
-    background-color: red;
-    position: relative;
-    background-image: url('/frontend/assets/chambre3.jpg');
-    background-color: #efa507;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5%;
-    z-index: 1;
-    display: flex;
-}
-
-.mid-section3{
-    width: 40%;
-    height: 25%;
-    background-color: rgb(255, 252, 252);
-    border: 0.1px solid #cac6c6;
-    position: absolute;
-    z-index: 1;
-    margin-top: 28%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
-.text-content3{
-    width: 80%;
-    height: 50%;
-    /* background-color: blue; */
-    font-size: small;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.btn-plus3{
-    width: 25%;
-    height: 20%;
-    border-radius: 1px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #100f0f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.btn-content3{
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    color: black;
-}
-
-
-
-/* ------------- Quatrième page ------------- */
-.presentation-restaurant{
-    width: 100%;
-    height: 100vh;
     display: flex;
 }
