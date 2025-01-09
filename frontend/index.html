@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/frontend/css/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/frontend/css/styles.css">
     <title>La Flèche d'Argent</title>
 </head>
@@ -29,7 +31,7 @@
                     <li class="dropdown">
                         <a href="#">Chambres</a>
                         <ul class="dropdown-content">
-                            <li><a href="chambres-classique.html">Classique</a></li>
+                            <li><a href="chambre.html">Classique</a></li>
                             <li><a href="chambres-confort.html">Confort</a></li>
                             <li><a href="chambres-standing.html">Standing</a></li>
                             <li><a href="chambres-suite.html">Suite</a></li>
@@ -166,6 +168,72 @@
             </div>
         </div>
     </section>
+
+    <!-- Cinquième Page -->
+
+    <div class="top-page-5">
+        <div class="content-top5">
+            <h2>NOS AVIS</h2>
+
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="testimonial mySwiper">
+          <div class="testi-content swiper-wrapper">
+             <!-- Premier avis -->
+            <div class="slide swiper-slide">
+              <img src="/frontend/assets/avis-jean.png" alt="" class="image" />
+              <p>
+                Une expérience gastronomique incroyable ! Chaque plat était une œuvre d'art,
+                avec des saveurs parfaitement équilibrées. L'accueil chaleureux et le cadre élégant m'ont complètement séduit.
+                Une adresse à ne pas manquer à Bordeaux !
+              </p>
+              <i class="bx bxs-quote-alt-left quote-icon"></i>
+              <div class="details">
+                <span class="name">Frank Dupont</span>
+                <span class="job">Avocat</span>
+              </div>
+            </div>
+            <!-- Deuxième avis -->
+            <div class="slide swiper-slide">
+              <img src="/frontend/assets/avis-gab.jpg" alt="" class="image" />
+              <p>
+                Le mariage des saveurs et la créativité des chefs m'ont émerveillée.
+                Une mention spéciale pour la carte des vins, qui accompagne chaque plat avec finesse.
+                Je recommande vivement pour un moment inoubliable en couple ou entre amis.
+              </p>
+              <i class="bx bxs-quote-alt-left quote-icon"></i>
+              <div class="details">
+                <span class="name">Gabriel Saint-Louis</span>
+                <span class="job">Joueur Pro fortnite</span>
+              </div>
+            </div>
+            <!-- Troisième avis -->
+            <div class="slide swiper-slide">
+              <img src="/frontend/assets/avis-pierre.png" alt="" class="image" />
+              <p>
+                Le service était irréprochable, et la cuisine exceptionnelle. 
+                Chaque bouchée était un délice. On sent l'amour du métier dans chaque détail. 
+                Merci à toute l'équipe pour cette soirée magique !
+              </p>
+              <i class="bx bxs-quote-alt-left quote-icon"></i>
+              <div class="details">
+                <span class="name">Pierre Martin</span>
+                <span class="job">Entrepreneur</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next nav-btn"></div>
+          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Swiper JS -->
+      <script src="/frontend/js/swiper-bundle.min.js"></script>
+      <!-- JavaScript -->
+      <script src="/frontend/js/script.js"></script>
     
 </body>
 </html>

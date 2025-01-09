@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Chambres</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+          font-family: "Poppins", sans-serif;
+        }
+        .h-font{
+            font-family: 'Merienda', cursive;
+        }
+
+    </style>
+</head>
+<body>
+
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
+
+  <div class="container">
+    <div class="swiper swiper-testimonials">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center p-4">
+            <img src="/frontend/assets/etoile.png" width="30px">
+            <h6 class="m-0 ms-2">Random User1</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea officia accusantium, adipisci voluptatum omnis labore minus esse nemo eveniet ullam, eum distinctio officiis corporis, recusandae dolorum? Sequi, repellat dolorum!
+          </p>
+          <div class="rating">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center p-4">
+            <img src="/frontend/assets/etoile.png" width="30px">
+            <h6 class="m-0 ms-2">Random User1</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea officia accusantium, adipisci voluptatum omnis labore minus esse nemo eveniet ullam, eum distinctio officiis corporis, recusandae dolorum? Sequi, repellat dolorum!
+          </p>
+          <div class="rating">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+        </div>
+
+        <div class="swiper-slide bg-white p-4">
+          <div class="profile d-flex align-items-center p-4">
+            <img src="/frontend/assets/etoile.png" width="30px">
+            <h6 class="m-0 ms-2">Random User1</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea officia accusantium, adipisci voluptatum omnis labore minus esse nemo eveniet ullam, eum distinctio officiis corporis, recusandae dolorum? Sequi, repellat dolorum!
+          </p>
+          <div class="rating">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      }
+    });
+
+    var swiper = new Swiper("swiper-testimonials", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+  
+
+</body>
+</html>
