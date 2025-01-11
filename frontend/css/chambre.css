@@ -261,7 +261,7 @@ body {
     height: 75%;
     background-color: rgb(44, 148, 148);
     position: relative;
-    background-image: url('/frontend/assets/spa.jpg');
+    background-image: url('/frontend/assets/chambre-classique.jpg');
     background-color: #efa507;
     background-size: cover;
     background-position: center;
@@ -279,7 +279,7 @@ body {
     height: 75%;
     background-color: rgb(44, 148, 148);
     position: relative;
-    background-image: url('/frontend/assets/spa.jpg');
+    background-image: url('/frontend/assets/chambre-classique.jpg');
     background-color: #efa507;
     background-size: cover;
     background-position: center;
@@ -288,10 +288,6 @@ body {
     z-index: 1;
     display: flex;
 }
-
-
-
-
 
 
 /* ------------- Troisième page CONFORT ------------- */
@@ -307,7 +303,7 @@ body {
     height: 75%;
     background-color: rgb(44, 148, 148);
     position: relative;
-    background-image: url('/frontend/assets/restaurant1.jpg');
+    background-image: url('/frontend/assets/chambre-confort.jpg');
     background-color: #efa507;
     background-size: cover;
     background-position: center;
@@ -325,7 +321,7 @@ body {
     height: 75%;
     background-color: rgb(44, 148, 148);
     position: relative;
-    background-image: url('/frontend/assets/restaurant1.jpg');
+    background-image: url('/frontend/assets/chambre-confort.jpg');
     background-color: #efa507;
     background-size: cover;
     background-position: center;
@@ -395,7 +391,91 @@ body {
     text-align: end;
 }
 
+/* Chambre standing */
 
+.right-page-x{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right-box-x{
+    width: 75%;
+    height: 75%;
+    background-color: rgb(44, 148, 148);
+    position: relative;
+    background-image: url('/frontend/assets/chambre-standing.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20%;
+    z-index: 1;
+    display: flex;
+    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
+}
+
+.right-box-x:hover{
+    width: 75%;
+    height: 75%;
+    background-color: rgb(44, 148, 148);
+    position: relative;
+    background-image: url('/frontend/assets/chambre-standing.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    z-index: 1;
+    display: flex;
+}
+
+/* Chambre SUITE */
+
+.left-page-s{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-box-s{
+    width: 75%;
+    height: 75%;
+    background-color: rgb(44, 148, 148);
+    position: relative;
+    background-image: url('/frontend/assets/suite-chambre.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20%;
+    z-index: 1;
+    display: flex;
+    box-shadow: 2px 2px 25px 5px rgba(0,0,0,0.30);
+}
+
+.left-box-s:hover{
+    width: 75%;
+    height: 75%;
+    background-color: rgb(44, 148, 148);
+    position: relative;
+    background-image: url('/frontend/assets/suite-chambre.jpg');
+    background-color: #efa507;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    z-index: 1;
+    display: flex;
+}
 
 
         /*-------------- Footer ----------------------- */
